@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>CodeFellowship</title>
+</head>
+<body>
+<div class="container">
+<header>
+    <h1>User Profiles</h1>
+</header>
+<div th:replace="bar :: nav"></div>
+
+<main>
+    <ul>
+        <img src="/Images/profilelabpic.png"/>
+        <li>
+            <p th:text="${profile.username}"></p>
+            <p th:text="${profile.firstName}"></p>
+            <p th:text="${profile.lastName}"></p>
+            <p th:text="${profile.dateOfBirth}"></p>
+            <p th:text="${profile.bio}"></p>
+        </li>
+    </ul>
+
+    <!--<a href="/users">User Profiles</a>-->
+
+</main>
+<footer>
+
+</footer>
+</div>
+</body>
+</html>
