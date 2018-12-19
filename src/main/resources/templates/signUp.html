@@ -4,9 +4,11 @@
     <title>CodeFellowship</title>
 </head>
 <body>
+<div class="container">
 <header>
-    <h1>Sign-Up</h1>
+    <h1>Sign Up</h1>
 </header>
+<div th:replace="bar :: nav"></div>
 <main>
 
     <form action="/users" method="post">
@@ -23,7 +25,7 @@
         <input type="text" name="lastName" id="lastName">
 
         <label for="dateOfBirth">Date of Birth:</label>
-        <input type="text" name="dateOfBirth" id="dateOfBirth">
+        <input type="date" name="dateOfBirth" id="dateOfBirth">
 
         <label for="bio">Bio:</label>
         <input type="text" name="bio" id="bio">
@@ -31,10 +33,11 @@
         <input type="submit">
     </form>
 
-    <a href="/index"> Home </a>
+    <!--<a href="/"> Home </a>-->
 </main>
 <footer>
 
 </footer>
+</div>
 </body>
 </html>
