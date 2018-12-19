@@ -1,4 +1,5 @@
 package com.kevinrosales.lab16;
+
 // import com.ferreirae.securedemo.appuser.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
